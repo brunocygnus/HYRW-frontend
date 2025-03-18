@@ -1,9 +1,9 @@
 import "./App.css";
 import {Route, Routes} from "react-router-dom";
 
-import NavBar from "./Components/NavBar";
+import NavBar from "./Components/Common/NavBar";
 import Landing from "./views/Landing";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Common/Footer";
 
 
 function App() {
