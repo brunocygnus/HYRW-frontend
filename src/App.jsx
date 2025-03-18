@@ -2,8 +2,8 @@ import "./App.css";
 import {Route, Routes} from "react-router-dom";
 
 import Landing from "./views/Landing";
-import MainNavBar from "./Components/Common/MainNavBar";
-import MainFooter from "./Components/Common/MainFooter";
+import MainNavBar from "./components/Common/MainNavBar";
+import MainFooter from "./components/Common/MainFooter";
 
 function App() {
   return (
