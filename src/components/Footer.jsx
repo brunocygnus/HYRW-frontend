@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
           <div className='w-full mx-auto mt-6 flex justify-around items-center text-sm text-gray-500'>
             <p>Copyright © HealYourRootsWellness 2025</p>
-            <button className='px-4 py-2 bg-gray-200 rounded-full text-gray-700 hover:bg-gray-300 hover:bg-primary-green transition'>
+            <button className='px-4 py-2 bg-gray-200 rounded-full text-primary-purple bg-secondary-pink hover:bg-primary-green transition'>
               Back to Top
             </button>
           </div>
