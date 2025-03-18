@@ -1,7 +1,7 @@
-import ClientsReview from "../Components/Landing/ClientsReview";
-import Hero from "../Components/Landing/Hero";
-import ServicesSection from "../Components/Landing/ServicesSection";
-import WhatsNew from "../Components/Landing/WhatsNew";
+import ClientsReview from "../components/Landing/ClientsReview";
+import Hero from "../components/Landing/Hero";
+import ServicesSection from "../components/Landing/ServicesSection";
+import WhatsNew from "../components/Landing/WhatsNew";
 
 export default function Landing() {
   return (
