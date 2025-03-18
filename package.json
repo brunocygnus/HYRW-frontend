@@ -2,7 +2,7 @@
   "name": "heal-your-roots-frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Catalyst-Growth-Systems.github.io/HYRW-Frontend",
+  "homepage": "https://brunocygnus.github.io/HYRW-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
