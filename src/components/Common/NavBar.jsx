@@ -10,7 +10,7 @@ import {
   DropdownMenu,
   Button,
 } from "@heroui/react";
-import Logo from "../assets/HYRW_Logo.png";
+import Logo from "../../assets/HYRW_Logo.png";
 import {FaBars} from "react-icons/fa";
 import {IoChevronDownOutline} from "react-icons/io5";
 import {useNavigate, useLocation} from "react-router-dom";

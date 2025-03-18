@@ -1,5 +1,5 @@
 import {IoArrowForward} from "react-icons/io5";
-import Logo from "../assets/HYRW_Logo.png";
+import Logo from "../../assets/HYRW_Logo.png";
 
 export default function Footer() {
   return (
