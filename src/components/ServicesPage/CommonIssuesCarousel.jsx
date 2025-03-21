@@ -85,10 +85,11 @@ export default function CommonIssuesCarousel() {
         <Slider
           dots={true}
           infinite={true}
-          speed={500}
+          speed={800}
           slidesToShow={5}
-          slidesToScroll={2}
+          slidesToScroll={1}
           autoplay={true}
+          autoplaySpeed={2000}
           arrows={true}
           responsive={[
             {
