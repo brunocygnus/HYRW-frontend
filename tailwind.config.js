@@ -25,6 +25,7 @@ export default {
       "primary-purple": "#32205f",
       "primary-green": "#9fd28c",
       "secondary-pink": "#cbc3e1",
+      "secondary-purple": "#6750A4",
       "secondary-typo": "#222222",
       "secondary-typo-grey": "#959595",
       "secondary-blue": "#3973e1",
@@ -34,7 +35,7 @@ export default {
 
     fontFamily: {
       DM: ["DM Sans", "sans-serif"],
-      exo: ["Inter", "sans-serif"],
+      Inter: ["Inter", "sans-serif"],
     },
     extend: {},
   },

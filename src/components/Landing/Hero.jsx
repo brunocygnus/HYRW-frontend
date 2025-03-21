@@ -13,7 +13,7 @@ export default function Hero() {
         <div className='w-1/2 h-[calc(100vh-80px)] flex flex-col items-start justify-end'>
           <div className='w-9/12 ml-7 bg-primary-purple h-16 rounded-2xl flex items-center justify-center'>
             <p className='text-white font-inter text-xl'>
-              THERAPY FOR ADULTS IN FLORIDA AND PENNSYLVANIA{" "}
+              THERAPY FOR ADULTS IN FLORIDA AND PENNSYLVANIA
             </p>
           </div>
 
