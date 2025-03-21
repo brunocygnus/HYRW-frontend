@@ -6,6 +6,7 @@ import MainNavBar from "./components/Common/MainNavBar";
 import MainFooter from "./components/Common/MainFooter";
 import About from "./views/About";
 import Services from "./views/Services";
+import Therapists from "./views/Therapists";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Landing />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/therapists' element={<Therapists />} />
       </Routes>
       <MainFooter />
     </div>
