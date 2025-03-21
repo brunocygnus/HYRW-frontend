@@ -3,9 +3,8 @@ import Logo from "../../assets/HYRW_Logo.png";
 
 export default function MainFooter() {
   return (
-    <footer className='bg-gray-50 w-full py-10 px-6 md:px-20 text-gray-700'>
+    <footer className='bg-[#c8c8c822] w-full py-10 px-6 md:px-20 text-gray-700'>
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
-       
         <div className=''>
           <img
             src={Logo}
@@ -31,7 +30,7 @@ export default function MainFooter() {
         <div className='flex w-full flex-col justify-center'>
           <div className='grid grid-cols-3 gap-4 text-sm text-primary-purple pl-24'>
             <div className='flex flex-col gap-2'>
-              <a href='#'>About Us</a>
+              <a href='/about'>About Us</a>
               <a href='#'>Our Stories</a>
               <a href='#'>Career</a>
               <a href='#'>Testimonials</a>

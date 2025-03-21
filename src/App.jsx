@@ -4,6 +4,8 @@ import {Route, Routes} from "react-router-dom";
 import Landing from "./views/Landing";
 import MainNavBar from "./components/Common/MainNavBar";
 import MainFooter from "./components/Common/MainFooter";
+import About from "./views/About";
+import Services from "./views/Services";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <MainNavBar />
       <Routes>
         <Route path='/' element={<Landing />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
       <MainFooter />
     </div>
