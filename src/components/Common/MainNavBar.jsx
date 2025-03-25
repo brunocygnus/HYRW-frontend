@@ -60,13 +60,13 @@ export default function MainNavBar() {
                 disableRipple
                 className='p-0 bg-transparent data-[hover=true]:bg-transparent font-inter text-primary-purple hover:underline hover:underline-offset-4 md:text-base'
               >
-                Collab
+                How it Works
               </Button>
             </DropdownTrigger>
           </NavbarItem>
           <DropdownMenu
             className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
-            aria-label='Collab'
+            aria-label='HowItWorks'
           >
             <DropdownItem
               key='universities'
@@ -89,21 +89,35 @@ export default function MainNavBar() {
           </DropdownMenu>
         </Dropdown>
 
-        <NavbarItem>
-          <Button
-            disableRipple
-            className={`p-0 bg-transparent data-[hover=true]:bg-transparent font-inter text-primary-purple hover:underline hover:underline-offset-4 md:text-base ${
-              location.pathname === "/services"
-                ? "underline underline-offset-4 text-primary-green"
-                : ""
-            }`}
-            onClick={() => navigate("/services")}
-            radius='sm'
-            variant='light'
+        <Dropdown>
+          <NavbarItem>
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className='p-0 bg-transparent data-[hover=true]:bg-transparent font-inter text-primary-purple hover:underline hover:underline-offset-4 md:text-base'
+              >
+                Our Services
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
+            aria-label='Collab'
           >
-            Services
-          </Button>
-        </NavbarItem>
+            <DropdownItem
+              key='universities'
+              className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+            >
+              Couples Therapy
+            </DropdownItem>
+            <DropdownItem
+              key='investors'
+              className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
+            >
+              Sex Theraphy
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
 
         <NavbarItem>
           <Button
@@ -113,7 +127,7 @@ export default function MainNavBar() {
                 ? "underline underline-offset-4 text-primary-green"
                 : ""
             }`}
-            onClick={() => navigate("/therapists")}
+            onPress={() => navigate("/therapists")}
             radius='sm'
             variant='light'
           >
@@ -128,7 +142,7 @@ export default function MainNavBar() {
                 disableRipple
                 className='p-0 bg-transparent data-[hover=true]:bg-transparent font-inter text-primary-purple hover:underline hover:underline-offset-4 md:text-base'
               >
-                Clinicians
+                For Providers
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -136,6 +150,15 @@ export default function MainNavBar() {
             className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
             aria-label='Collab'
           >
+            <DropdownItem
+              key='universities'
+              className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+            >
+              Clinicians
+              <p className='text-secondary-typo-grey -mt-1 text-sm'>
+                Connect with Us to..
+              </p>
+            </DropdownItem>
             <DropdownItem
               key='universities'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
@@ -149,7 +172,16 @@ export default function MainNavBar() {
               key='investors'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
             >
-              Carreer to Grow
+              Carreers
+              <p className='text-secondary-typo-grey -mt-1 text-sm'>
+                Connect with Us to..
+              </p>
+            </DropdownItem>
+            <DropdownItem
+              key='investors'
+              className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
+            >
+              Work with Us
               <p className='text-secondary-typo-grey -mt-1 text-sm'>
                 Connect with Us to..
               </p>
