@@ -1,10 +1,10 @@
-import hero_background from "../../assets/hero_background.png";
+import hero_background from "../../assets/hero_background.jpg";
 import FreeConsultForm from "./FreeConsultForm";
 
 export default function Hero() {
   return (
     <div
-      className='relative h-96 flex flex-col justify-end md:items-start md:mb-7 md:h-auto md:mt-20 bg-cover bg-bottom lg:bg-center'
+      className='relative h-96 flex flex-col justify-end md:items-start md:mb-7 md:h-auto md:mt-20 bg-cover bg-bottom lg:bg-top'
       style={{
         backgroundImage: `url(${hero_background})`,
       }}
