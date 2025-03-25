@@ -1,5 +1,3 @@
-import discount_img from "../../assets/discount_img.png";
-
 export default function JoinUs() {
   return (
     <div className='w-full px-12 mt-7'>
@@ -23,18 +21,6 @@ export default function JoinUs() {
             <p className='font-DM text-left font-semibold text-2xl'>
               #LetsStayHealthy
             </p>
-          </div>
-          <div className='relative flex items-center justify-left text-white py-4 px-4 '>
-            <img
-              src={discount_img}
-              alt='50% Discount'
-              className='absolute inset-0 w-full h-auto object-cover rounded-lg'
-            />
-            <span className='relative w-1/2'>
-              <p className='font-DM text-left mt-3 font-semibold text-2xl'>
-                50% Discount
-              </p>
-            </span>
           </div>
         </div>
       </div>
