@@ -1,11 +1,16 @@
-import {Card, CardBody, CardHeader, Image, useDisclosure} from "@heroui/react";
-import TherapistModal from "./TherapistModal";
+import {useNavigate} from "react-router-dom";
+import {Card, CardBody, CardHeader, Image} from "@heroui/react";
 
 export default function TherapistCard({therapist}) {
-  const theraphistModal = useDisclosure();
+  const navigate = useNavigate();
 
   return (
-    <div onClick={theraphistModal.onOpen}>
+    <div
+      onClick={() =>
+        navigate(`/therapists/${encodeURIComponent(therapist.name)}`)
+      }
+      className='cursor-pointer'
+    >
       <Card className='pb-4 mb-3 h-auto w-80 relative flex flex-col shadow-lg rounded-xl'>
         <CardHeader className='p-0 w-80 relative'>
           <Image
@@ -24,11 +29,6 @@ export default function TherapistCard({therapist}) {
             </p>
           </div>
         </CardBody>
-        <TherapistModal
-          isOpen={theraphistModal.isOpen}
-          onOpenChange={theraphistModal.onOpenChange}
-          therapist={therapist}
-        />
       </Card>
     </div>
   );

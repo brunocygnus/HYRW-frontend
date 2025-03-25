@@ -7,6 +7,7 @@ import MainFooter from "./components/Common/MainFooter";
 import About from "./views/About";
 import Services from "./views/Services";
 import Therapists from "./views/Therapists";
+import TherapistPage from "./views/TherapistPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
         <Route path='/therapists' element={<Therapists />} />
+        <Route path='/therapists/:name' element={<TherapistPage />} />
       </Routes>
       <MainFooter />
     </div>
