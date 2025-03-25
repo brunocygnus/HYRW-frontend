@@ -1,4 +1,3 @@
-import discount_img from "../../assets/discount_img.png";
 import faq_bg_img from "../../assets/faq_bg_img.png";
 
 export default function HowToStart() {
@@ -35,7 +34,7 @@ export default function HowToStart() {
                   All you need to know
                 </p>
               </div>
-              <div className="flex items-end">
+              <div className='flex items-end'>
                 <button className='w-40 h-8 bg-primary-green text-white font-DM rounded-2xl'>
                   Get Started
                 </button>
@@ -47,18 +46,6 @@ export default function HowToStart() {
               <p className='font-DM text-left font-semibold text-2xl'>
                 #LetsStayHealthy
               </p>
-            </div>
-            <div className='relative w-full flex items-center justify-left text-white py-4 px-4 '>
-              <img
-                src={discount_img}
-                alt='50% Discount'
-                className='absolute inset-0 w-auto h-28 object-cover rounded-lg'
-              />
-              <span className='relative w-1/2'>
-                <p className='font-DM text-left mt-3 font-semibold text-2xl'>
-                  50% Discount
-                </p>
-              </span>
             </div>
           </div>
         </div>

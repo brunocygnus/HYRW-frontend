@@ -73,18 +73,12 @@ export default function MainNavBar() {
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
             >
               Universities
-              <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
-              </p>
             </DropdownItem>
             <DropdownItem
               key='investors'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
             >
               Investors
-              <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
-              </p>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
@@ -102,17 +96,19 @@ export default function MainNavBar() {
           </NavbarItem>
           <DropdownMenu
             className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
-            aria-label='Collab'
+            aria-label='Services'
           >
             <DropdownItem
-              key='universities'
+              key='couples'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+              onPress={() => navigate("/services/couples")}
             >
               Couples Therapy
             </DropdownItem>
             <DropdownItem
-              key='investors'
+              key='sex-therapy'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
+              onPress={() => navigate("/services/sex-therapy")}
             >
               Sex Theraphy
             </DropdownItem>
