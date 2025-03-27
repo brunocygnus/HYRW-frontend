@@ -60,14 +60,27 @@ export default function MainNavBar() {
                 disableRipple
                 className='p-0 bg-transparent data-[hover=true]:bg-transparent font-inter text-primary-purple hover:underline hover:underline-offset-4 md:text-base'
               >
-                How it Works
+                About Us
               </Button>
             </DropdownTrigger>
           </NavbarItem>
           <DropdownMenu
-            className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
-            aria-label='HowItWorks'
+            className='bg-[#eee9fd] flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
+            aria-label='About'
           >
+            <DropdownItem
+              key='WhoWeAre'
+              className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+              onPress={() => navigate("/about")}
+            >
+              Who we Are
+            </DropdownItem>
+            <DropdownItem
+              key='HowItWorks'
+              className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+            >
+              How it Works
+            </DropdownItem>
             <DropdownItem
               key='universities'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
@@ -95,9 +108,16 @@ export default function MainNavBar() {
             </DropdownTrigger>
           </NavbarItem>
           <DropdownMenu
-            className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
+            className='bg-[#eee9fd] flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
             aria-label='Services'
           >
+            <DropdownItem
+              key='individual'
+              className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+              onPress={() => navigate("/services/individual")}
+            >
+              Individual
+            </DropdownItem>
             <DropdownItem
               key='couples'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
@@ -143,43 +163,44 @@ export default function MainNavBar() {
             </DropdownTrigger>
           </NavbarItem>
           <DropdownMenu
-            className='bg-white flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
-            aria-label='Collab'
+            className='bg-[#eee9fd] flex flex-col w-56 px-3 gap-5 py-3 rounded-md'
+            aria-label='providers'
           >
             <DropdownItem
-              key='universities'
+              key='clinicians'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
+              onPress={() => navigate("/join-us-as-a-clinician")}
             >
               Clinicians
               <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
+                Become a HYRW Therapy provider
               </p>
             </DropdownItem>
             <DropdownItem
-              key='universities'
+              key='interns'
               className='font-inter text-primary-purple mb-2 hover:bg-secondary-pink p-2'
             >
               Interns
               <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
+                Start your Career Journey
               </p>
             </DropdownItem>
             <DropdownItem
-              key='investors'
+              key='careers'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
             >
-              Carreers
+              Careers
               <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
+                Join our Team
               </p>
             </DropdownItem>
             <DropdownItem
-              key='investors'
+              key='network'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
             >
-              Work with Us
+              Join Our Network
               <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Connect with Us to..
+                For Private Practice Owner
               </p>
             </DropdownItem>
           </DropdownMenu>

@@ -14,9 +14,9 @@ export default function CouplesTherapy() {
             alt='Individual Therapy'
             className='w-full rounded-lg'
           />
-          <div className='absolute inset-0 flex justify-center items-end p-6 rounded-lg'>
+          <div className='absolute inset-0 flex justify-center items-end p-5 rounded-lg'>
             <div className='w-10/12 text-white pb-2'>
-              <h3 className='text-xl md:text-3xl mb-2'>
+              <h3 className='text-xl md:text-3xl mb-2 pl-2'>
                 You deserve to feel fulfilled, confident and in control of your
                 life
               </h3>
