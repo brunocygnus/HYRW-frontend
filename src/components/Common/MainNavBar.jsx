@@ -185,14 +185,20 @@ export default function MainNavBar() {
                 Start your Career Journey
               </p>
             </DropdownItem>
+
             <DropdownItem
               key='careers'
               className='font-inter text-primary-purple hover:bg-secondary-pink p-2'
             >
-              Careers
-              <p className='text-secondary-typo-grey -mt-1 text-sm'>
-                Join our Team
-              </p>
+              <a
+                href='https://studio.softr.io/applications/094e2300-4403-4f4b-8b83-a6cf249a21cd/pages/d48b77e1-e0d3-4f1d-bcf2-e4adf9342b70'
+                target='blank'
+              >
+                Careers
+                <p className='text-secondary-typo-grey -mt-1 text-sm'>
+                  Join our Team
+                </p>
+              </a>
             </DropdownItem>
             <DropdownItem
               key='network'
@@ -209,7 +215,7 @@ export default function MainNavBar() {
         <NavbarItem>
           <Button
             disableRipple
-            className='px-5 rounded-xl bg-primary-purple hover:bg-primary-pink font-inter text-white hover:bg-secondary-pink hover:text-primary-purple md:text-lg'
+            className='px-5 rounded-xl w-36 bg-primary-purple hover:bg-primary-pink font-inter text-white hover:bg-secondary-pink hover:text-primary-purple md:text-lg'
             onPress={() => navigate("/book-schedule")}
             radius='sm'
             variant='light'
